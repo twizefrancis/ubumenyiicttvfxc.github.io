@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8" />
+  <title>UbumenyiICTFXC - Ahabanza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>UbumenyiICTFXC</h1>
+    <nav>
+      <a href="index.html">Ahabanza</a>
+      <a href="amakuru.html">Amakuru</a>
+      <a href="gallery.html">Amafoto</a>
+      <a href="contact.html">Twandikire</a>
+    </nav>
+  
+<div class="lang-switcher">
+  <a href="#" onclick="switchLang('rw')">Kinyarwanda</a> |
+  <a href="#" onclick="switchLang('en')">English</a> |
+  <a href="#" onclick="switchLang('fr')">Français</a> |
+  <a href="#" onclick="switchLang('sw')">Kiswahili</a>
+  <a href="#">Kinyarwanda</a> |
+  <a href="#">English</a> |
+  <a href="#">Français</a> |
+  <a href="#">Kiswahili</a>
+</div>
+
+</header>
+  <main>
+    <h2 id="main-title">Ikaze ku rubuga!</h2>
+    <p id="main-intro">UbumenyiICTFXC ni urubuga rugamije gutambutsa amakuru n’ubumenyi ku ikoranabuhanga.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 UbumenyiICTFXC. All rights reserved.</p>
+  </footer>
+
+<script>
+  const translations = {
+    rw: {
+      title: "Ikaze ku rubuga!",
+      intro: "UbumenyiICTFXC ni urubuga rugamije gutambutsa amakuru n’ubumenyi ku ikoranabuhanga."
+    },
+    en: {
+      title: "Welcome to the website!",
+      intro: "UbumenyiICTFXC is a platform for sharing tech knowledge and news."
+    },
+    fr: {
+      title: "Bienvenue sur le site !",
+      intro: "UbumenyiICTFXC est une plateforme de partage des connaissances technologiques et des actualités."
+    },
+    sw: {
+      title: "Karibu kwenye tovuti!",
+      intro: "UbumenyiICTFXC ni jukwaa la kushiriki maarifa na habari za kiteknolojia."
+    }
+  };
+
+  function switchLang(lang) {
+    document.getElementById("main-title").innerText = translations[lang].title;
+    document.getElementById("main-intro").innerText = translations[lang].intro;
+  }
+</script>
+
+</body>
+</html>
